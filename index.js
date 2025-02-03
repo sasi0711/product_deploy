@@ -13,4 +13,3 @@ mongoose.connect('mongodb://localhost:27017/sample')
 
 app.use("", productRouter);
 
-console.log('Say my name')
