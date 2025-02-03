@@ -5,10 +5,12 @@ const productRouter = require('./Routes/ProductRoutes')
 
 app.use(express.json())
 
-app.listen('1848', ()=> console.log('server running on 5000'))
+app.listen('1848', ()=> console.log('server running on 1848'))
 
 mongoose.connect('mongodb://localhost:27017/sample')
     .then(()=> console.log('database connected..'))
     .catch((err) => console.log(err))
 
 app.use("", productRouter);
+
+console.log('Say my name')
