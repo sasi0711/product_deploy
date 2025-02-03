@@ -13,3 +13,7 @@ mongoose.connect('mongodb+srv://sasi071811:sasi KUMAR071811@mycluster.mr37s.mong
 
 app.use("", productRouter);
 
+app.get('/',(req,res)=>{
+    res.send('server reacted')
+})
+
